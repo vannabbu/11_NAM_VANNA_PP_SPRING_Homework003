@@ -13,18 +13,18 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EventRequest {
-    @Schema(description = "The name of the event", example = "Tech Conference 2026", maxLength = 100)
+    @Schema(description = "The name of the event", example = "Event", maxLength = 100)
     @Size(max = 100)
     private String eventName;
 
-    @Schema(description = "Date of the event", example = "2026-05-20")
+    @Schema(description = "Date event", example = "2026-05-20")
     private Date eventDate;
 
-    @Schema(description = "ID of the venue", example = "1")
+    @Schema(description = "ID", example = "1")
     private Long venueId;
 
     @Schema(
-            description = "List of attendee IDs participating in the event",
+            description = "List of attendees",
             example = "[1, 2, 3]",
             minimum = "1"
     )

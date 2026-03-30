@@ -32,6 +32,6 @@ public interface VenueRepository {
 
 
         @ResultMap("mapper")
-        @Select("delete from venues where venues_id = #{id}")
+        @Select("delete from venues where venue_id = #{id}")
         Venues deleteVenue(Long id);
 }

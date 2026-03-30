@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class AttendeeRequest {
     @Schema(
-            description = "Name of the attendee (letters and spaces only)",
+            description = "Name of the attendee",
             example = "Vanna Nam",
             minLength = 1,
             maxLength = 50,
